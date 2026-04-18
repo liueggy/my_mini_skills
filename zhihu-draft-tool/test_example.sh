@@ -1,0 +1,30 @@
+#!/bin/sh
+# 知乎草稿工具使用示例
+# 注意：需要先获取知乎Cookie并设置环境变量
+
+echo "=== 知乎草稿直连发布器使用示例 ==="
+echo ""
+echo "1. 首先获取知乎Cookie："
+echo "   - 在浏览器中登录知乎"
+echo "   - 使用开发者工具获取Cookie"
+echo "   - 保存到环境文件"
+echo ""
+echo "2. 使用包装脚本："
+echo "   ./zhihu_draft_tool_wrapper.sh create \\"
+echo "     --base-id 2028607956032176996 \\"
+echo "     --title '测试文章' \\"
+echo "     --content-file example.md \\"
+echo "     --summary '测试摘要' \\"
+echo "     --comment-permission all"
+echo ""
+echo "3. 直接使用Python脚本："
+echo "   python3 zhihu_draft_tool.py get \\"
+echo "     --cookie '\$COOKIE_STRING' \\"
+echo "     --id 2028871642558787933"
+echo ""
+echo "4. 查看帮助："
+echo "   python3 zhihu_draft_tool.py --help"
+echo "   python3 zhihu_draft_tool.py create --help"
+echo ""
+echo "=== 文件列表 ==="
+ls -la
